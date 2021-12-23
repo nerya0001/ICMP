@@ -1,3 +1,3 @@
 # ICMP, Sniffing
-> Made by Nerya Bigon and Eitan Eitan Shenkolovski
+> Made by Nerya Bigon and Eitan Shenkolovski
 * Assignment in networking course
