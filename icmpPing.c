@@ -49,7 +49,7 @@ unsigned short calculate_checksum(unsigned short *paddress, int len)
     return answer;
 }
 
-#define DESTINATION_IP "0.0.0.0"
+#define DESTINATION_IP "8.8.8.8"
 
 int main()
 {
@@ -136,7 +136,7 @@ int main()
     }
     gettimeofday(&end, 0);
     printf("ping returned\n");
-    double duration = (end.tv_sec - start.tv_sec) + ((end.tv_usec - start.tv_usec));
+    double duration = (end.tv_sec - start.tv_sec)*1000000 + (end.tv_usec - start.tv_usec)/1000;
     printf("Time: %f ms \n", duration);
 
     // Close the raw socket descriptor.
